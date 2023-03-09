@@ -2,8 +2,20 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        JFrame window = new JFrame();
+        GamePanel gamePanel = new GamePanel();
+        ImageIcon icon = new ImageIcon("res/ryan.png");
+
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setTitle("RyanBros");
+        window.setVisible(true);
+        window.setIconImage(icon.getImage());
+        window.add(gamePanel);
+        window.pack();
+        window.setLocationRelativeTo(null);
     }
 
 }

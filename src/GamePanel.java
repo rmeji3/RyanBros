@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 
 public class GamePanel extends JPanel implements ActionListener {
     private Timer timer;
@@ -10,7 +9,7 @@ public class GamePanel extends JPanel implements ActionListener {
     Player player = new Player(keyHandler);
 
     public GamePanel(){
-        this.setPreferredSize(new Dimension(1280, 720));
+        this.setPreferredSize(new Dimension(screenWidth, screenHeight));
         this.setBackground(new Color(135,206,235));
         this.setDoubleBuffered(true);
         this.setFocusable(true);

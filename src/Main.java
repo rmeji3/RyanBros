@@ -11,11 +11,15 @@ public class Main {
 
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setTitle("RyanBros");
-        window.setVisible(true);
         window.setIconImage(icon.getImage());
+
         window.add(gamePanel);
         window.pack();
+
         window.setLocationRelativeTo(null);
+        window.setVisible(true);
+
+        gamePanel.startGameThread();
     }
 
 }

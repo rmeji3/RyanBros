@@ -21,7 +21,6 @@ public class Player {
             playerImage = ImageIO.read(new File(("res\\huzi.png")));
         } catch (IOException ex) {
             System.err.println("Error loading image.");
-            ex.printStackTrace();
         }
     }
 

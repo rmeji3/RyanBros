@@ -19,10 +19,12 @@ public class KeyHandler implements KeyListener {
 
         if(code == KeyEvent.VK_D) {
             rightPressed = true;
+            System.out.println("D");
         }
 
         if(code == KeyEvent.VK_A) {
             leftPressed = true;
+            System.out.println("A");
         }
 
         if(code == KeyEvent.VK_W) {
